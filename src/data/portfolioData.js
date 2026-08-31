@@ -9,7 +9,7 @@ export const profile = {
   lastName: 'Arham',
   role: 'Front-End Developer / Software Engineer',
   tagline:
-    'I build responsive, scalable, and user-centric web applications with clean, maintainable code.',
+    'I Build Responsive, Scalable, and User-Centric Web Applications with Clean, Maintainable Code.',
   location: 'Lahore, Pakistan',
   email: 'muhammadarham2177@gmail.com',
   phone: '+92-336-6641190',
@@ -17,6 +17,7 @@ export const profile = {
   github: 'https://github.com/muhammad-arham-dev',
   resumeUrl: '/Muhammad-Arham-Resume.pdf',
   avatar: '/profile.jpg',
+  creation: '/hero.jpg',
   available: true,
 }
 
@@ -164,7 +165,7 @@ export const projects = [
     title: 'Lenz Pricing & Product Webpage',
     description:
       'A pricing and product showcase page focused on clean layout, clear hierarchy, and a conversion-friendly component structure.',
-    tags: ['Next.js', 'Tailwind CSS'],
+    tags: ['React.js', 'Tailwind CSS'],
     type: 'Front-End',
     repo: profile.github,
     live: '',
@@ -176,7 +177,7 @@ export const projects = [
     title: 'More on GitHub',
     description:
       'Mini-projects built while sharpening core front-end fundamentals — components, layouts, and small JavaScript utilities.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Tailwind CSS', 'React.js', 'Next.js', 'GitHub'],
     type: 'Self-Learning',
     repo: profile.github,
     live: '',
@@ -185,6 +186,6 @@ export const projects = [
 ]
 
 export const contact = {
-  heading: "Let's build something.",
-  sub: "Have a role, a project, or just want to say hi? My inbox is open.",
+  heading: "Let's Build Something.",
+  sub: "Have a Role, a Project, or just want to say Hi? My Inbox is Open.",
 }

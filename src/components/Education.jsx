@@ -5,15 +5,15 @@ export default function Education() {
   const ref = useReveal()
 
   return (
-    <section id="education" className="container-px py-20 sm:py-28">
+    <section id="education" className="container-px py-16 sm:py-20">
       <div ref={ref} className="reveal">
         <p className="eyebrow mb-4 justify-center">My Education</p>
         <h2 className="section-heading text-center mx-auto">
           Learning <span className="text-mint-400">Journey</span>
         </h2>
         <p className="section-sub text-center mx-auto">
-          A steady academic path in information technology and computer science that shaped how I
-          approach building software today.
+          A Steady Academic Path in Information Technology and Computer Science that shaped how I
+          approach building Software today.
         </p>
 
         {/* timeline */}

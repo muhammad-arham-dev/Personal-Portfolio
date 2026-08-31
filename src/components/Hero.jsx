@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative pt-32 pb-24 overflow-hidden"
+      className="relative pt-32 pb-16 sm:pb-20 overflow-hidden"
     >
       {/* ambient glow */}
       <div className="pointer-events-none absolute -top-40 right-0 w-[36rem] h-[36rem] rounded-full bg-mint-500/10 blur-[120px]" />
@@ -53,7 +53,7 @@ export default function Hero() {
 
           <div className="mt-12 flex items-center gap-5">
             <span className="font-mono text-xs tracking-[0.2em] text-paper-500 uppercase">
-              Find me on
+              Find Me On
             </span>
             <div className="flex items-center gap-3">
               {socials.map(({ label, href, icon }) => {
@@ -97,7 +97,7 @@ export default function Hero() {
             */}
             <div className="relative z-10 w-[78%] aspect-square rounded-full overflow-hidden border border-mint-500/30">
               <img
-                src={profile.avatar}
+                src={profile.creation}
                 alt="Muhammad Arham"
                 className="w-full h-full object-cover"
               />
@@ -134,7 +134,7 @@ export default function Hero() {
                 <span className="text-mint-400">"React / Next.js"</span>,
                 <br />
                 &nbsp;&nbsp;status:{' '}
-                <span className="text-mint-400">"open to work"</span>
+                <span className="text-mint-400">"Open to Work"</span>
                 <br />
                 {'}'}
               </p>

@@ -6,7 +6,7 @@ export default function About() {
   const ref = useReveal()
 
   return (
-    <section id="about" className="container-px py-20 sm:py-28">
+    <section id="about" className="container-px py-16 sm:py-20">
       <div ref={ref} className="reveal grid lg:grid-cols-[0.85fr,1.15fr] gap-16 items-center">
         {/* photo */}
         <div className="relative mx-auto lg:mx-0 max-w-xs">

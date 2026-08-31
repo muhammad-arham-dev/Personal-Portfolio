@@ -23,8 +23,8 @@ export default function Navbar() {
       <nav className="container-px flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 group">
-          <span className="relative w-10 h-10 rounded-xl overflow-hidden border border-ink-border/14">
-            <img src={profile.avatar} alt={profile.name} className="w-full h-full object-cover" />
+          <span className="relative w-10 h-10 rounded-xl overflow-hidden border-2 border-mint-400 shadow-lg shadow-mint-500/20">
+            <img src={profile.avatar} alt={profile.name} className="w-full h-full object-cover object-center" />
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-display text-sm font-semibold text-paper-100 tracking-wide">

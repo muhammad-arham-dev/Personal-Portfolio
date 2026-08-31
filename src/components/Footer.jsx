@@ -8,9 +8,9 @@ export default function Footer() {
 
   return (
     <footer className="relative border-t border-ink-border overflow-hidden">
-      <div className="container-px py-16 relative grid sm:grid-cols-3 gap-10 sm:gap-16 items-start">
+      <div className="container-px py-16 sm:py-20 relative grid sm:grid-cols-3 gap-16 sm:gap-24 items-center">
         {/* Left: Navigation */}
-        <nav className="grid grid-cols-2 gap-x-6 gap-y-2 font-mono text-sm">
+        <nav className="grid grid-cols-2 gap-x-8 gap-y-4 font-mono text-sm">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="text-paper-500 hover:text-mint-400 transition-colors">
               {link.label}
@@ -23,7 +23,7 @@ export default function Footer() {
           <img
             src={profile.avatar}
             alt={profile.name}
-            className="w-16 h-16 rounded-2xl object-cover border border-ink-border mb-4"
+            className="w-16 h-16 rounded-2xl object-cover object-center border-2 border-mint-400 shadow-lg shadow-mint-500/20 mb-4"
           />
           <p className="font-display text-lg font-semibold text-paper-100">{profile.name}</p>
           <p className="font-mono text-xs text-mint-400 uppercase tracking-wide mt-1">
@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
 
         {/* Right: Social Links */}
-        <div className="flex items-center justify-center sm:justify-end gap-3">
+        <div className="flex items-center justify-center sm:justify-end gap-4">
           {socials.map(({ label, href, icon }) => {
             const Icon = ICONS[icon]
             return (
@@ -61,7 +61,7 @@ export default function Footer() {
       {/* big background name */}
       <div
         aria-hidden="true"
-        className="pointer-events-none select-none absolute -bottom-10 left-1/2 -translate-x-1/2 font-display font-bold text-[18vw] leading-none text-paper-100/[0.03] whitespace-nowrap"
+        className="pointer-events-none select-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-display font-bold text-[20vw] leading-none text-paper-100/[0.02] whitespace-nowrap"
       >
         ARHAM
       </div>

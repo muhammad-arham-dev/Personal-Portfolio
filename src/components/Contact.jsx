@@ -47,7 +47,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="container-px py-20 sm:py-28">
+    <section id="contact" className="container-px py-16 sm:py-20">
       <div ref={ref} className="reveal grid lg:grid-cols-[0.9fr,1.1fr] gap-16">
         {/* left copy */}
         <div>

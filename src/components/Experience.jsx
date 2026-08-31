@@ -5,13 +5,13 @@ export default function Experience() {
   const ref = useReveal()
 
   return (
-    <section id="experience" className="container-px py-20 sm:py-28">
+    <section id="experience" className="container-px py-16 sm:py-20">
       <div ref={ref} className="reveal">
         <p className="eyebrow mb-4">Where I've Worked</p>
         <h2 className="section-heading">
           Experience <span className="text-mint-400">Log</span>
         </h2>
-        <p className="section-sub">Real projects, real deadlines, real code reviews.</p>
+        <p className="section-sub">Real projects, Real Deadlines, Real Code Reviews.</p>
 
         <div className="mt-14 space-y-6">
           {experience.map((job) => (

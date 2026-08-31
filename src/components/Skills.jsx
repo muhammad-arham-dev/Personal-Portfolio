@@ -12,16 +12,16 @@ export default function Skills() {
   const ref = useReveal()
 
   return (
-    <section id="skills" className="bg-ink-850/50 border-y border-ink-border">
-      <div className="container-px py-20 sm:py-28">
+    <section id="skills">
+      <div className="container-px py-16 sm:py-20">
         <div ref={ref} className="reveal">
           <p className="eyebrow mb-4">Skill Set</p>
           <h2 className="section-heading">
-            Tools of the <span className="text-mint-400">trade</span>
+            Tools of the <span className="text-mint-400">Trade</span>
           </h2>
           <p className="section-sub">
-            A practical toolkit built through internship work, self-directed projects, and a
-            couple of very patient certifications.
+            A Practical Toolkit Built through Internship Work, Self-Directed Projects, and a
+            Couple of very Patient Certifications.
           </p>
 
           <div className="mt-14 grid sm:grid-cols-2 gap-6">

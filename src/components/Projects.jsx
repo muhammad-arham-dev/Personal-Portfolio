@@ -6,13 +6,13 @@ export default function Projects() {
   const ref = useReveal()
 
   return (
-    <section id="projects" className="container-px py-20 sm:py-28">
+    <section id="projects" className="container-px py-16 sm:py-20">
       <div ref={ref} className="reveal">
         <p className="eyebrow mb-4">My Work</p>
         <h2 className="section-heading">
           Featured <span className="text-mint-400">Projects</span>
         </h2>
-        <p className="section-sub">Selected builds from internship work and self-learning.</p>
+        <p className="section-sub">Selected Builds from Internship Work and Self-Learning .</p>
 
         <div className="mt-16 divide-y divide-ink-border border-y border-ink-border">
           {projects.map((project) => (
