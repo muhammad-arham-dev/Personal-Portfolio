@@ -27,7 +27,7 @@ export default function Navbar() {
             <img src={profile.avatar} alt={profile.name} className="w-full h-full object-cover object-center" />
           </span>
           <span className="flex flex-col leading-none">
-            <span className="font-display text-sm font-semibold text-paper-100 tracking-wide">
+            <span className="font-display text-sm font-semibold text-paper-100 group-hover:text-mint-400 transition-colors tracking-wide">
               M. ARHAM
             </span>
             <span className="font-mono text-[10px] tracking-[0.2em] text-paper-500 uppercase mt-1">

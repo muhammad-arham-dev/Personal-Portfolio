@@ -26,7 +26,7 @@ export default function Skills() {
 
           <div className="mt-14 grid sm:grid-cols-2 gap-6">
             {GROUPS.map((group) => (
-              <div key={group.key} className="card p-6">
+              <div key={group.key} className="card p-6 card-hover-glow card-hover-scale transition-transform duration-300">
                 <p className="font-mono text-[11px] text-paper-500 mb-1">{group.comment}</p>
                 <h3 className="font-display text-lg font-semibold text-paper-100 mb-4">
                   {group.label}

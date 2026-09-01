@@ -1,6 +1,6 @@
-# 🚀 Muhammad Arham — Portfolio
+# 🚀 Muhammad Arham Portfolio
 
-A modern, responsive personal portfolio built with React, Vite, and Tailwind CSS.
+A modern personal portfolio website built with React, Vite, and Tailwind CSS. The site showcases my work, experience, education, skills, and contact information in a polished, responsive layout.
 
 ![React](https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=flat-square&logo=vite)
@@ -8,49 +8,47 @@ A modern, responsive personal portfolio built with React, Vite, and Tailwind CSS
 
 ---
 
-## ✨ Features
+## ✨ Highlights
 
-- 🌙 Dark & Light mode with persistent preference
-- 📱 Fully responsive design (mobile, tablet, desktop)
-- ⚡ Fast performance with Vite
-- 🎨 Smooth animations & scroll effects
-- 📧 Working contact form (FormSubmit.co)
-- 🎯 All content in one file for easy updates
+- 🌙 Light and dark theme toggle
+- 📱 Responsive layout for desktop, tablet, and mobile
+- ⚡ Fast front-end experience powered by Vite
+- 🎨 Animated hero badges, hover effects, and smooth transitions
+- 💼 Sections for About, Experience, Education, Skills, Projects, and Contact
+- 📧 Contact form integrated with FormSubmit
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **React 18+** — UI Framework
-- **Vite** — Build tool
-- **Tailwind CSS** — Styling
-- **FormSubmit.co** — Form handling
+- **React** — UI development
+- **Vite** — Front-end tooling and build system
+- **Tailwind CSS** — Styling and responsive design
+- **FormSubmit** — Contact form handling
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Local Development
 
 ### Prerequisites
-- Node.js (v14+)
-- npm or yarn
 
-### Setup & Run
+- Node.js 18+
+- npm
+
+### Install and run
 
 ```bash
-# Clone repository
-git clone <repository-url>
-cd portfolio
-
-# Install dependencies
 npm install
-
-# Start dev server
 npm run dev
 ```
 
-Open `http://localhost:5173` in your browser.
+Then open:
 
-### Build for Production
+```bash
+http://localhost:5173
+```
+
+### Production build
 
 ```bash
 npm run build
@@ -59,94 +57,44 @@ npm run preview
 
 ---
 
-## 📝 Customization
+## 📁 Project Overview
 
-### Update Content
+This portfolio includes:
 
-All portfolio content is in a single file:
-```
-src/data/portfolioData.js
-```
-
-Edit to update:
-- Personal info & contact details
-- Education, skills, experience
-- Projects
-- Social media links
-
-### Replace Images
-
-- **Profile Photo:** `public/profile.jpg` (1000x1000px recommended)
-- **Resume:** `public/Muhammad-Arham-Resume.pdf`
-
-### Customize Colors
-
-Edit CSS variables in `src/index.css`:
-```css
-:root {
-  --color-bg: 11 15 20;        /* Dark mode background */
-  --color-text: 245 247 250;   /* Dark mode text */
-}
-
-html.light {
-  --color-bg: 240 250 248;     /* Light mode background */
-  --color-text: 40 45 60;      /* Light mode text */
-}
-```
-
-### Setup Contact Form
-
-The form sends to `muhammadarham2177@gmail.com`.
-
-To change email, update `src/components/Contact.jsx`:
-```javascript
-await fetch('https://formsubmit.co/YOUR_EMAIL@gmail.com', {
-```
+- Hero section with intro, call-to-action buttons, and floating tech badges
+- About section with profile summary and key details
+- Experience timeline
+- Education and certifications
+- Skills breakdown
+- Project showcase
+- Contact form and social links
 
 ---
 
-## 📂 Project Structure
+## 🚀 Deployment
 
-```
-src/
-├── components/          # React components
-├── data/
-│   └── portfolioData.js # Content file
-├── hooks/
-│   └── useReveal.js    # Scroll animation hook
-├── App.jsx             # Main app
-└── index.css           # Global styles
-```
+### Vercel
 
----
-
-## 🚀 Deploy
-
-### Vercel (Recommended)
-
-1. Push to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import repository
-4. Set framework to **Vite**
-5. Click Deploy
+1. Push the project to GitHub
+2. Import it into Vercel
+3. Select the Vite project settings
+4. Deploy
 
 ### Netlify
 
-1. Push to GitHub
-2. Go to [netlify.com](https://netlify.com)
-3. Connect repository
-4. Build: `npm run build` | Publish: `dist`
-5. Deploy
+1. Push the project to GitHub
+2. Import it into Netlify
+3. Use the build command: `npm run build`
+4. Publish the `dist` folder
 
 ---
 
 ## 📞 Contact
 
-- 📧 Email: [muhammadarham2177@gmail.com](mailto:muhammadarham2177@gmail.com)
-- 📱 Phone: [+92-336-6641190](tel:+92-336-6641190)
-- 💼 LinkedIn: [linkedin.com/in/muhammad-arham-b12683331](https://www.linkedin.com/in/muhammad-arham-b12683331)
-- 🐙 GitHub: [github.com/muhammad-arham-dev](https://github.com/muhammad-arham-dev)
+- Email: [muhammadarham2177@gmail.com](mailto:muhammadarham2177@gmail.com)
+- LinkedIn: [linkedin.com/in/muhammad-arham-b12683331](https://www.linkedin.com/in/muhammad-arham-b12683331)
+- GitHub: [github.com/muhammad-arham-dev](https://github.com/muhammad-arham-dev)
 
 ---
 
-**Made with ❤️ by Muhammad Arham**
+Made with ❤️ by Muhammad Arham

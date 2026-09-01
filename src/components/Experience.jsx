@@ -17,7 +17,7 @@ export default function Experience() {
           {experience.map((job) => (
             <div
               key={job.id}
-              className="card p-6 sm:p-8 hover:border-mint-500/30 transition-colors"
+              className="card p-6 sm:p-8 card-hover-glow card-hover-scale transition-transform duration-300"
             >
               <div className="flex flex-wrap items-start justify-between gap-4 mb-6">
                 <div>

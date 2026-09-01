@@ -45,7 +45,7 @@ export default function Footer() {
                 target={href.startsWith('http') ? '_blank' : undefined}
                 rel="noreferrer"
                 aria-label={label}
-                className="w-10 h-10 rounded-full border border-ink-border flex items-center justify-center text-paper-300 hover:text-mint-400 hover:border-mint-500/50 transition-colors"
+                className="w-10 h-10 rounded-full border border-ink-border flex items-center justify-center text-paper-300 hover:text-mint-400 hover:border-mint-400 transition-all duration-300"
               >
                 <Icon />
               </a>

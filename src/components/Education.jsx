@@ -23,7 +23,7 @@ export default function Education() {
             {education.map((edu, i) => (
               <div key={edu.id} className="relative">
                 <div className="hidden md:flex absolute -top-[2.15rem] left-6 w-3 h-3 rounded-full bg-mint-500 ring-4 ring-ink-900" />
-                <div className="card p-6 h-full hover:border-mint-500/30 transition-colors">
+                <div className="card p-6 h-full card-hover-glow card-hover-scale transition-transform duration-300">
                   <div className="flex items-center justify-between gap-4 mb-4">
                     <span className="font-mono text-xs text-mint-400 border border-mint-500/30 rounded-full px-3 py-1">
                       {edu.period}
@@ -50,7 +50,7 @@ export default function Education() {
             {certifications.map((cert) => (
               <div
                 key={cert.id}
-                className="flex items-start gap-4 card p-5 hover:border-mint-500/30 transition-colors"
+                className="flex items-start gap-4 card p-5 card-hover-glow card-hover-scale transition-transform duration-300"
               >
                 <span className="mt-1 w-2 h-2 rounded-sm bg-mint-500 shrink-0" />
                 <div>

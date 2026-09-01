@@ -26,10 +26,10 @@ html.light {
   --color-bg-alt: 235 248 246;
   --color-surface: 255 255 255;
   --color-surface-2: 230 245 242;
-  --color-border: 200 210 220;
-  --color-text: 40 45 60;
-  --color-text-dim: 80 90 110;
-  --color-text-muted: 130 140 160;
+  --color-border: 160 175 195;
+  --color-text: 25 35 55;
+  --color-text-dim: 50 70 100;
+  --color-text-muted: 90 110 140;
 }
 
 html {
@@ -112,4 +112,81 @@ body {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Pause animations on hover */
+.float-paused {
+  animation: float 1.8s ease-in-out infinite;
+  animation-play-state: paused !important;
+}
+
+.float-paused.float-on-hover:hover,
+.float-on-hover:hover {
+  animation-play-state: running !important;
+}
+
+/* Marquee pause on hover */
+.marquee-container:hover .animate-marquee {
+  animation-play-state: paused !important;
+}
+
+/* Glow effect for cards on hover */
+.card-hover-glow:hover {
+  border-color: rgba(79, 227, 194, 0.5);
+  box-shadow: 0 0 20px rgba(79, 227, 194, 0.3), inset 0 0 15px rgba(79, 227, 194, 0.05);
+}
+
+/* Scale effect for cards */
+.card-hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Icon glow on hover */
+.icon-hover-glow {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.icon-hover-glow:hover {
+  border-color: rgba(79, 227, 194, 0.8) !important;
+  box-shadow: 0 0 12px rgba(79, 227, 194, 0.5), inset 0 0 12px rgba(79, 227, 194, 0.2) !important;
+  color: rgba(79, 227, 194, 1) !important;
+}
+
+/* Badge glow effect */
+.badge-hover-glow {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge-hover-glow:hover {
+  box-shadow: 0 0 16px rgba(79, 227, 194, 0.5), inset 0 0 12px rgba(79, 227, 194, 0.15) !important;
+  border-color: rgba(79, 227, 194, 0.6) !important;
+}
+
+/* Image border glow on hover */
+.image-border-glow {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-border-glow:hover {
+  border-color: rgba(79, 227, 194, 1) !important;
+  box-shadow: 
+    0 0 8px rgba(79, 227, 194, 0.3),
+    0 0 16px rgba(79, 227, 194, 0.4),
+    0 0 24px rgba(79, 227, 194, 0.5),
+    inset 0 0 20px rgba(79, 227, 194, 0.2) !important;
+}
+
+/* Table content hover */
+.table-content-hover:hover p:last-child {
+  color: rgba(79, 227, 194, 1);
+}
+
+/* Contact form styling */
+.form-hover-glow {
+  transition: all 0.3s ease;
+}
+
+.form-hover-glow:hover {
+  border-color: rgba(79, 227, 194, 0.6) !important;
+  box-shadow: 0 0 20px rgba(79, 227, 194, 0.25), inset 0 0 15px rgba(79, 227, 194, 0.05) !important;
 }

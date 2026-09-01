@@ -65,7 +65,7 @@ export default function Hero() {
                     target={href.startsWith('http') ? '_blank' : undefined}
                     rel="noreferrer"
                     aria-label={label}
-                    className="w-10 h-10 rounded-full border border-ink-border/14 flex items-center justify-center text-paper-300 hover:text-mint-400 hover:border-mint-500/50 transition-colors"
+                    className="w-10 h-10 rounded-full border border-ink-border/14 flex items-center justify-center text-paper-300 hover:text-mint-400 transition-all duration-300 icon-hover-glow"
                   >
                     <Icon />
                   </a>
@@ -85,16 +85,6 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-full border border-dashed border-mint-500/25 animate-[spin_22s_linear_infinite]" />
             <div className="absolute -inset-6 rounded-full border border-dashed border-ink-border/40 animate-[spin_32s_linear_infinite_reverse]" />
 
-            {/*
-              Photo: currently a circular crop of profile.jpg. For the fully
-              "cut out" look from the reference video, run this photo through
-              a free background remover (remove.bg or Canva's BG Remover),
-              drop the transparent PNG in /public as profile-cutout.png, then
-              swap the <img> below to:
-                <img src="/profile-cutout.png" className="relative z-10 w-[78%] object-contain drop-shadow-[0_30px_35px_rgba(0,0,0,0.45)]" />
-              and delete the rounded-full/overflow-hidden wrapper — a
-              transparent PNG doesn't need to be cropped into a circle.
-            */}
             <div className="relative z-10 w-[78%] aspect-square rounded-full overflow-hidden border border-mint-500/30">
               <img
                 src={profile.creation}
@@ -104,20 +94,20 @@ export default function Hero() {
             </div>
 
             {/* floating code-tag badges, echoing the reference layout */}
-            <span className="absolute top-2 left-0 sm:-left-2 card w-11 h-11 flex items-center justify-center font-mono text-xs text-mint-400 animate-float [animation-delay:0.3s]">
+            <span className="absolute top-2 left-0 sm:-left-2 card w-11 h-11 flex items-center justify-center font-mono text-xs text-mint-400 animate-float float-paused float-on-hover [animation-delay:0.3s] cursor-pointer hover:border-mint-400 hover:shadow-[0_0_12px_rgba(79,227,194,0.5),inset_0_0_12px_rgba(79,227,194,0.2)] transition-all duration-300">
               {'</>'}
             </span>
-            <span className="absolute top-6 right-0 sm:-right-3 card w-11 h-11 flex items-center justify-center font-mono text-xs text-mint-400 animate-float [animation-delay:0.9s]">
+            <span className="absolute top-16 right-0 sm:-right-3 card w-11 h-11 flex items-center justify-center font-mono text-xs text-mint-400 animate-float float-paused float-on-hover [animation-delay:0.9s] cursor-pointer hover:border-mint-400 hover:shadow-[0_0_12px_rgba(79,227,194,0.5),inset_0_0_12px_rgba(79,227,194,0.2)] transition-all duration-300">
               {'{ }'}
             </span>
-            <span className="absolute bottom-8 -left-3 sm:-left-6 card px-3 py-1.5 font-mono text-[11px] text-amber-400 animate-float [animation-delay:1.4s]">
+            <span className="absolute bottom-8 -left-3 sm:-left-6 card px-3 py-1.5 font-mono text-[11px] text-amber-400 animate-float float-paused float-on-hover [animation-delay:1.4s] cursor-pointer hover:border-mint-400 hover:shadow-[0_0_12px_rgba(79,227,194,0.5),inset_0_0_12px_rgba(79,227,194,0.2)] transition-all duration-300">
               JS
             </span>
-            <span className="absolute -top-2 right-10 w-2 h-2 rounded-full bg-mint-400/70 animate-float [animation-delay:0.6s]" />
-            <span className="absolute bottom-2 left-8 w-1.5 h-1.5 rounded-full bg-mint-400/50 animate-float [animation-delay:1.1s]" />
+            <span className="absolute -top-2 right-10 w-2 h-2 rounded-full bg-mint-400/70 animate-float float-paused float-on-hover [animation-delay:0.6s] cursor-pointer hover:shadow-[0_0_12px_rgba(79,227,194,0.5)] transition-all duration-300" />
+            <span className="absolute bottom-2 left-8 w-1.5 h-1.5 rounded-full bg-mint-400/50 animate-float float-paused float-on-hover [animation-delay:1.1s] cursor-pointer hover:shadow-[0_0_12px_rgba(79,227,194,0.5)] transition-all duration-300" />
 
             {/* floating terminal card */}
-            <div className="absolute -bottom-10 -left-4 sm:-left-8 w-64 sm:w-72 card p-4 animate-float [animation-delay:1s] z-20">
+            <div className="absolute -bottom-10 -left-4 sm:-left-8 w-64 sm:w-72 card p-4 animate-float float-paused float-on-hover [animation-delay:1s] z-20 cursor-pointer hover:border-mint-400 hover:shadow-[0_0_12px_rgba(79,227,194,0.5),inset_0_0_12px_rgba(79,227,194,0.2)] transition-all duration-300">
               <div className="flex items-center gap-1.5 mb-3">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#F2564C]" />
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-400" />
@@ -141,7 +131,7 @@ export default function Hero() {
             </div>
 
             {profile.available && (
-              <div className="absolute -top-4 -right-4 sm:right-2 flex items-center gap-2 card px-3 py-1.5 z-20">
+              <div className="absolute -top-4 -right-4 sm:right-2 flex items-center gap-2 card px-3 py-1.5 z-20 animate-float float-paused float-on-hover cursor-pointer hover:border-mint-400 hover:shadow-[0_0_12px_rgba(79,227,194,0.5),inset_0_0_12px_rgba(79,227,194,0.2)] transition-all duration-300">
                 <span className="relative flex w-2 h-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-mint-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-mint-500" />
@@ -154,7 +144,7 @@ export default function Hero() {
       </div>
 
       {/* tech marquee */}
-      <div className="mt-24 border-y border-ink-border/14 py-5 overflow-hidden">
+      <div className="mt-24 border-y border-ink-border/14 py-5 overflow-hidden marquee-container">
         <div className="flex w-max animate-marquee gap-10 font-mono text-sm text-paper-500">
           {[...stack, ...stack].map((tech, i) => (
             <span key={`${tech}-${i}`} className="flex items-center gap-10 shrink-0">

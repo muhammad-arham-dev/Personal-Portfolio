@@ -95,7 +95,7 @@ export default function Contact() {
         </div>
 
         {/* form */}
-        <form onSubmit={handleSubmit} className="card p-6 sm:p-8 space-y-5">
+        <form onSubmit={handleSubmit} className="card p-6 sm:p-8 space-y-5 form-hover-glow transition-all duration-300">
           {submitted && (
             <div className="p-4 bg-mint-500/10 border border-mint-500/50 rounded-lg text-mint-400 text-sm">
               ✓ Message sent successfully! I'll get back to you soon.
@@ -117,7 +117,7 @@ export default function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Your name"
-                className="mt-2 w-full bg-ink-900 border border-ink-border rounded-lg px-4 py-3 text-paper-100 placeholder:text-paper-500 focus:border-mint-500/50 outline-none transition-colors"
+                className="mt-2 w-full bg-ink-800 border border-ink-border rounded-lg px-4 py-3 text-paper-100 placeholder:text-paper-500 focus:border-mint-500/50 outline-none transition-colors"
               />
             </div>
             <div>
@@ -131,7 +131,7 @@ export default function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="you@email.com"
-                className="mt-2 w-full bg-ink-900 border border-ink-border rounded-lg px-4 py-3 text-paper-100 placeholder:text-paper-500 focus:border-mint-500/50 outline-none transition-colors"
+                className="mt-2 w-full bg-ink-800 border border-ink-border rounded-lg px-4 py-3 text-paper-100 placeholder:text-paper-500 focus:border-mint-500/50 outline-none transition-colors"
               />
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function Contact() {
               value={form.message}
               onChange={handleChange}
               placeholder="Tell me about the role or project..."
-              className="mt-2 w-full bg-ink-900 border border-ink-border rounded-lg px-4 py-3 text-paper-100 placeholder:text-paper-500 focus:border-mint-500/50 outline-none transition-colors resize-none"
+              className="mt-2 w-full bg-ink-800 border border-ink-border rounded-lg px-4 py-3 text-paper-100 placeholder:text-paper-500 focus:border-mint-500/50 outline-none transition-colors resize-none"
             />
           </div>
           <button
