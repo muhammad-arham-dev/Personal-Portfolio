@@ -100,11 +100,6 @@ export default function Hero() {
             <span className="absolute top-16 right-0 sm:-right-3 card w-11 h-11 flex items-center justify-center font-mono text-xs text-mint-400 animate-float float-paused float-on-hover [animation-delay:0.9s] cursor-pointer hover:border-mint-400 hover:shadow-[0_0_12px_rgba(79,227,194,0.5),inset_0_0_12px_rgba(79,227,194,0.2)] transition-all duration-300">
               {'{ }'}
             </span>
-            <span className="absolute bottom-8 -left-3 sm:-left-6 card px-3 py-1.5 font-mono text-[11px] text-amber-400 animate-float float-paused float-on-hover [animation-delay:1.4s] cursor-pointer hover:border-mint-400 hover:shadow-[0_0_12px_rgba(79,227,194,0.5),inset_0_0_12px_rgba(79,227,194,0.2)] transition-all duration-300">
-              JS
-            </span>
-            <span className="absolute -top-2 right-10 w-2 h-2 rounded-full bg-mint-400/70 animate-float float-paused float-on-hover [animation-delay:0.6s] cursor-pointer hover:shadow-[0_0_12px_rgba(79,227,194,0.5)] transition-all duration-300" />
-            <span className="absolute bottom-2 left-8 w-1.5 h-1.5 rounded-full bg-mint-400/50 animate-float float-paused float-on-hover [animation-delay:1.1s] cursor-pointer hover:shadow-[0_0_12px_rgba(79,227,194,0.5)] transition-all duration-300" />
 
             {/* floating terminal card */}
             <div className="absolute -bottom-10 -left-4 sm:-left-8 w-64 sm:w-72 card p-4 animate-float float-paused float-on-hover [animation-delay:1s] z-20 cursor-pointer hover:border-mint-400 hover:shadow-[0_0_12px_rgba(79,227,194,0.5),inset_0_0_12px_rgba(79,227,194,0.2)] transition-all duration-300">

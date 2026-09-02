@@ -19,6 +19,9 @@
   --color-text: 245 247 250; /* headings / primary text */
   --color-text-dim: 199 208 220; /* secondary text */
   --color-text-muted: 147 161 180; /* labels, captions */
+  --color-mint-400: 76 227 194;
+  --color-mint-500: 47 211 174;
+  --color-mint-600: 31 174 142;
 }
 
 html.light {
@@ -26,10 +29,13 @@ html.light {
   --color-bg-alt: 235 248 246;
   --color-surface: 255 255 255;
   --color-surface-2: 230 245 242;
-  --color-border: 160 175 195;
-  --color-text: 25 35 55;
-  --color-text-dim: 50 70 100;
-  --color-text-muted: 90 110 140;
+  --color-border: 117 142 138;
+  --color-text: 24 38 39;
+  --color-text-dim: 45 66 67;
+  --color-text-muted: 76 96 96;
+  --color-mint-400: 20 125 104;
+  --color-mint-500: 22 155 127;
+  --color-mint-600: 16 128 103;
 }
 
 html {
@@ -103,6 +109,9 @@ body {
 .card {
   /* stylelint-disable-next-line at-rule-no-unknown */
   @apply bg-ink-800/70 border border-ink-border/40 rounded-2xl backdrop-blur-sm transition-colors duration-300;
+}
+html.light .card {
+  border-color: rgb(var(--color-mint-600) / 0.5);
 }
 .reveal {
   opacity: 0;

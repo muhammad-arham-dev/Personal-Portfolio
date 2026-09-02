@@ -31,9 +31,9 @@ export default {
           500: themed('--color-text-muted'),
         },
         mint: {
-          400: '#4CE3C2',
-          500: '#2FD3AE',
-          600: '#1FAE8E',
+          400: themed('--color-mint-400'),
+          500: themed('--color-mint-500'),
+          600: themed('--color-mint-600'),
           glow: 'rgba(47,211,174,0.35)',
         },
         amber: {
