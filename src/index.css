@@ -40,12 +40,16 @@ html.light {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
+  overflow-x: clip;
+
   /* stylelint-disable-next-line at-rule-no-unknown */
   @apply bg-ink-900 text-paper-100 font-body antialiased transition-colors duration-300;
 }
+
 
 ::selection {
   background: rgba(47, 211, 174, 0.3);
