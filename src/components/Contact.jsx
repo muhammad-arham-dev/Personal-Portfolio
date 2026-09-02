@@ -18,33 +18,44 @@ export default function Contact() {
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setError('')
-    
-    try {
-      const formData = new FormData()
-      formData.append('name', form.name)
-      formData.append('email', form.email)
-      formData.append('message', form.message)
-      formData.append('_captcha', 'false')
+  e.preventDefault()
+  setError('')
 
-      const response = await fetch('https://formsubmit.co/muhammadarham2177@gmail.com', {
+  try {
+    const response = await fetch(
+      'https://formsubmit.co/ajax/muhammadarham2177@gmail.com',
+      {
         method: 'POST',
-        body: formData,
-      })
-
-      if (response.ok) {
-        setSubmitted(true)
-        setForm({ name: '', email: '', message: '' })
-        setTimeout(() => setSubmitted(false), 5000)
-      } else {
-        setError('Failed to send message. Please try again.')
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          _subject: 'New Portfolio Contact Message',
+          _captcha: true,
+        }),
       }
-    } catch (err) {
-      setError('Error sending message. Please try again later.')
-      console.error(err)
+    )
+
+    const data = await response.json()
+
+    if (response.ok && data.success) {
+      setSubmitted(true)
+      setForm({ name: '', email: '', message: '' })
+
+      setTimeout(() => setSubmitted(false), 5000)
+    } else {
+      setError('Failed to send message. Please try again.')
+      console.error(data)
     }
+  } catch (err) {
+    setError('Error sending message. Please try again later.')
+    console.error(err)
   }
+}
 
   return (
     <section id="contact" className="container-px py-16 sm:py-20">
